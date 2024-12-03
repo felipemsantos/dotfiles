@@ -147,7 +147,7 @@ source $ZSH/oh-my-zsh.sh
 # zsh-syntax-highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# source virtualenvwrapper.sh
+
 
 # Dotfiles
 DOTFILES=${HOME}/.dotfiles
@@ -157,6 +157,8 @@ source ${DOTFILES}/aliases
 source ${DOTFILES}/functions
 # homebrew
 source ${DOTFILES}/homebrew
+# mysql
+source ${DOTFILES}/mysql
 # nvm 
 source ${DOTFILES}/nvm
 # sdkman
