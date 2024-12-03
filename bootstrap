@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew update 
+brew upgrade
+brew bundle install --file Brewfile
+
+# oh-my-zsh + plugins
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# sdkman
+sdk install java 17.0.13-amzn
+sdk install java 21.0.5-amzn
+sdk install maven
+sdk install gradle 8.11.1
+sdk default java 21.0.5-amzn
+sdk default gradle 8.11.1
+
+# nvm 
+nvm install --lts
+
+# stow
+stow aws
+stow curl
+stow git
+stow wget
+stow zsh
