@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
 
+# AWS local environment (Localstack)
+complete -C which aws_completer aws
+
+function aws-local-on() {
+  export AWS_ENDPOINT_URL=http://localhost:4566
+}
+
+function aws-local-off() {
+  unset AWS_ENDPOINT_URL
+}
+
+aws-local-off
+
 # Proxy setup
 function proxy-on() {
 	PROXY_USER=''
@@ -25,6 +38,8 @@ function proxy-off() {
 	unset HTTPS_PROXY
 	unset NO_PROXY
 }
+
+proxy-off
 
 # Create a new directory and enter it
 function mkd() {
