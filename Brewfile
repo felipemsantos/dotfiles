@@ -14,6 +14,7 @@ brew 'bat'
 brew 'binutils'
 brew 'coreutils'
 brew 'curl'
+brew 'd2'
 brew 'docker-compose'
 brew 'ffmpeg'
 brew 'findutils'
@@ -65,7 +66,7 @@ cask 'font-roboto'
 cask 'font-source-code-pro'
 cask 'font-source-code-pro-for-powerline'
 
-# Mac App Store 
+# Mac App Store
 mas 'Bear', id: 1091189122
 mas 'Xcode', id: 497799835
 
@@ -74,12 +75,14 @@ vscode '42crunch.vscode-openapi'
 vscode 'amazonwebservices.amazon-q-vscode'
 vscode 'amazonwebservices.aws-toolkit-vscode'
 vscode 'davidanson.vscode-markdownlint'
+vscode 'editorconfig.editorconfig'
 vscode 'github.github-vscode-theme'
 vscode 'github.remotehub'
 vscode 'github.vscode-github-actions'
 vscode 'github.vscode-pull-request-github'
 vscode 'grafana.grafana-vscode'
 vscode 'hashicorp.terraform'
+vscode 'hediet.vscode-drawio'
 vscode 'k--kato.intellij-idea-keybindings'
 vscode 'k6.k6'
 vscode 'mindaro-dev.file-downloader'
